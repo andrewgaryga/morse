@@ -38,7 +38,7 @@ body {
 }
 
 text {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 text:nth-child(2) {
@@ -57,9 +57,16 @@ text:nth-child(3) {
 text:nth-child(4) {
   fill:white;
   font-family: 'Open Sans', sans-serif;
-  font-size:18px;
+  font-size:16px;
+  display: none;
+}
+text:nth-child(5) {
+  fill:white;
+  font-family: 'Open Sans', sans-serif;
+  font-size:12px;
   display: inherit;
 }
+
 
 
 
@@ -68,11 +75,18 @@ text:nth-child(4) {
 text {
   font-size: 80px;
 }
+
 }
 
 @media(min-width:360px){
 text {
   font-size: 90px;
+}
+text:nth-child(4) {
+  display: inherit;
+}
+text:nth-child(5) {
+  display: none;
 }
 
 }
@@ -85,9 +99,6 @@ text:nth-child(3) {
   display: inherit;
 }
 text:nth-child(4) {
-  fill:white;
-  font-family: 'Open Sans', sans-serif;
-  font-size:18px;
   display: none;
 }
 }
